@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <title>WallstreetCN - 产品开发流程与规范</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+                    <p>WallstreetCN</p>
+                    <h1>产品开发 </h1>
+                    <p>流程与规范 </p>
+                </section>
+
+                <section>
+                    <h2>1.1 项目开始前 …… 构思阶段</h2>
+
+                    <ol>
+                        <li>产品调查与构思（体验使用至少5个同类产品，列举其优缺点，决定我们自己产品的功能）。[<a href="https://drive.google.com/a/wallstreetcn.com/file/d/0B2W5v8K47w44eVZMZ1NkVVNVTjQ/edit?usp=sharing">参考文档</a>]</li>
+                        <li>列出产品功能需求清单。[<a href="https://drive.google.com/a/wallstreetcn.com/file/d/0B2W5v8K47w44R3JZd24wNjY0X28/edit?usp=sharing">参考文档</a>] </li>
+                        <li>完成产品首页线框图。 [<a href="https://drive.google.com/a/wallstreetcn.com/file/d/0B2W5v8K47w44eVZMZ1NkVVNVTjQ/edit?usp=sharing">在线工具</a>] </li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>1.2 项目开始前 …… 评估阶段</h2>
+                    <p>召集所有参与者开会，进行第一轮评估，主要评估项目有：</p>
+                    <ol>
+                        <li>技术评估：判断需求是否具备可行性，预估大致工作量</li>
+                        <li>费用评估：项目需求经费是否在公司可承受范围内</li>
+                        <li>运营评估：项目运营难度及可能遇到的问题 </li>
+                    </ol>
+                    <hr/>
+                    <p>评估基本通过，则进入下一环节</p>
+                    <p>如评估出现重大问题，需要重新进行构思及再一轮评估</p>
+                </section>
+
+                <section>
+                    <h2>1.3 项目开始前 …… 申报阶段</h2>
+                    <p>申请项目需要填写[<a href="https://docs.google.com/a/wallstreetcn.com/document/d/1WI4YPnOQElv12s-2ZFBgGh2ttSMa8UxOOr52VNoUKgo/edit?usp=sharing">项目计划书</a>]，完成计划书内所有项目，由技术部及CEO确认后项目方能启动，需填写项目包括：</p>
+                    <ol>
+                        <li>项目成员</li>
+                        <li>项目开发功能清单</li>
+                        <li>项目开发日程安排（可直接使用Github Issue）</li>
+                        <li>项目经费</li>
+                    </ol>
+                    <hr/>
+                    <p>开发日程需要与所有项目成员确认完毕</p>
+                    <p>计划书应以邮件形式发送所有项目参与者</p>
+                </section>
+
+                <section>
+                    <h2>2.1 项目进行 …… 任务分配</h2>
+                    <p>任何一个项目需要以下的基础配置：</p>
+                    <ol>
+                        <li>Github代码仓库（从技术部申请）</li>
+                        <li>内部沟通板块（Github自带）</li>
+                        <li>对外意见反馈板块（Trello）</li>
+                    </ol>
+                    <hr/>
+                    <p>项目经理将功能开发清单按日程安排填写到Github Issue，并指派到相关人员</p>
+                </section>
+
+                <section>
+                    <h2>2.2 项目进行 …… 迭代开发</h2>
+                    <p>项目验收以周为单位，以模块/功能为单位进行迭代：</p>
+                    <ol>
+                        <li>项目需要有内部可测试的Demo</li>
+                        <li>一个模块/功能完成由后项目经理进行确认</li>
+                        <li>对有问题的部分开启Issue，指派给相关负责人</li>
+                        <li>开发人员修复完毕后关闭Issue</li>
+                    </ol>
+                    <hr/>
+                    <p>重复1-4直至功能完成</p>
+                </section>
+
+                <section>
+                    <h2>2.3 项目进行 …… 测试及上线</h2>
+                    <p>项目完成后需要准备Demo进行内部测试：</p>
+                    <ol>
+                        <li>参与测试人员将意见统一反馈到Trello</li>
+                        <li>项目经理召开项目会议，对收到的意见进行分类：需修改|暂缓|忽略</li>
+                        <li>开发人员修改并回复Trello上的意见</li>
+                    </ol>
+                    <hr/>
+                    <p>重复1-3直至所有修改项目完成后方可上线</p>
+                </section>
+
+                <section>
+                    <h2>3.1 注意事项</h2>
+                    <ol>
+                        <li>项目与项目有冲突时，由项目经理之间进行进度的协调沟通</li>
+                        <li>项目中所有功能修改以Issue的形式书面进行，避免口头传达</li>
+                        <li>每天沟通时间尽量固定，非紧急情况必须将若干小功能点整理后一次讨论，避免打断。</li>
+                        <li>耗时较长的临时性任务开发人员需要与项目经理进行确认</li>
+                        <li>开发人员在项目结束后必须进行Code Review，对技术部所有成员讲解项目中采用的技术及难点问题的解决。</li>
+                    </ol>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
